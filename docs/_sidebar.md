@@ -13,6 +13,10 @@
 
 - JVM
   - [Arthas](jvm/Arthas.md)
+  - [GC日志](jvm/GC日志.md)
 
+- 线程
+  - [线程](thread/thread.md)
 
-- 数据库
+- elasticsearch
+  - [es-字段类型-flattened](elasticsearch/es-字段类型-flattened.md)
