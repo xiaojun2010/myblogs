@@ -17,6 +17,7 @@
 
 - 线程
   - [线程](thread/thread.md)
+  - [AQS](thread/AQS.md)
 
 - elasticsearch
   - [es-字段类型-flattened](elasticsearch/es-字段类型-flattened.md)
