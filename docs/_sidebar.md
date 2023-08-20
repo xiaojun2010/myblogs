@@ -21,3 +21,8 @@
 
 - elasticsearch
   - [es-字段类型-flattened](elasticsearch/es-字段类型-flattened.md)
+
+  - elasticsearch7.X
+    - [第6章 Elasticsearch 篇之分布式特性介绍](es7/第6章_Elasticsearch篇之分布式特性介绍.md)
+    - [第7章 Elasticsearch 篇之深入了解 Search 的运行机制](es7/第7章_Elasticsearch篇之深入了解Search的运行机制.md)
+    - [第9章 Elasticsearch 篇之数据建模](es7/第9章_Elasticsearch篇之数据建模.md)
