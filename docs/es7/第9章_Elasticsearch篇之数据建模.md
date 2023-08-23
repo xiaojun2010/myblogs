@@ -195,7 +195,7 @@
 
 - blog_index 的mapping 设置如下：
 
-  ![image-20230820004512798](img09/04.png)
+  <img src="img09/04.png" alt="image-20230820010459363" style="zoom:20%;" /> 
 
   ```json
   PUT /blog_index
@@ -227,15 +227,15 @@
       }
     }
   }
-  
+
   PUT blog_index/_doc/1
   {
     "title":"blog title",
     "content":"blog content"
   }
-  
+
   GET blog_index/_search
-  
+
   GET blog_index/_search?_source=title
   ```
 
@@ -616,12 +616,10 @@ Join 6.x之后才有，之前使用的是type，多type方式
 <img src="img09/24.png" alt="image-20230820024116740" style="zoom:100%;" />
 
 
+<img src="img09/25.png" alt="image-20230820095424995" style="zoom:50%;" />
+<img src="img09/26.png" alt="image-20230820095424995" style="zoom:50%;" />
+<img src="img09/27.png" alt="image-20230820095424995" style="zoom:50%;" />
 
-![image-20230820024806099](img09/25.png)
-
-![image-20230820024951206](img09/26.png)
-
-![image-20230820025039835](img09/27.png)
 
 ### 7.3 Nested Object vs Parent/Child
 
@@ -650,9 +648,10 @@ Join 6.x之后才有，之前使用的是type，多type方式
 
 例子：
 
-![image-20230820100034950](img09/30.png)
 
-![image-20230820100216806](img09/31.png)
+<img src="img09/30.png" alt="image-20230820095424995" style="zoom:50%;" />
+
+<img src="img09/31.png" alt="image-20230820095424995" style="zoom:50%;" />
 
 ```json
 GET blog_index/_search
@@ -703,13 +702,14 @@ GET blog_new_index/_search
 - 数据重建的时间受源索引文档规模的影响，当规模越大时，所需时间越多，此时需要通过设定url参数 `wait_for_completion 为false` 来异步执行，ES以task来描述此类执行任务
 - ES提供了Task API 来查看任务的执行进度和相关数据
 
-![image-20230820101436353](/Users/zhangxiaojun/work/study/es/workspace/elasticsearch/docs/es7/09/img09/35.png)
+
+<img src="img09/35.png" alt="image-20230820095424995" style="zoom:50%;" />
 
 例子：
 
-![image-20230820101619325](/Users/zhangxiaojun/work/study/es/workspace/elasticsearch/docs/es7/09/img09/36.png)
+<img src="img09/36.png" alt="image-20230820095424995" style="zoom:50%;" />
 
-![image-20230820101751297](img09/37.png)
+<img src="img09/37.png" alt="image-20230820095424995" style="zoom:50%;" />
 
 词库发生变化，需要reindex
 
